@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1003614017453",
+    "project_id": "sheaholics",
+    "storage_bucket": "sheaholics.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1003614017453:android:6a1a20cadac24d2f4b3324",
+        "android_client_info": {
+          "package_name": "com.example.sheaholics_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1003614017453-u4ictftsm2f4kamknobo1i41g2ac5j2k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.sheaholics_app",
+            "certificate_hash": "9a22f5bc4fe6bc2eccd27a46529e38cf983edba7"
+          }
+        },
+        {
+          "client_id": "1003614017453-qjr3kp4jtc7khqmqqo1cai9gth0ouh5t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBGaPedNm28HVDsiUheC3mn9AeFP91cJNI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1003614017453-qjr3kp4jtc7khqmqqo1cai9gth0ouh5t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
