@@ -1,3 +1,32 @@
 <resources>
     <string name="app_name">Sheaholics_App</string>
+    <string-array name="categories">
+        <item>Web Development</item>
+        <item>App Development</item>
+        <item>Machine Learning</item>
+        <item>Information Security</item>
+    </string-array>
+    <string-array name="sub1">
+        <item>CSS</item>
+        <item>HTML</item>
+        <item>React</item>
+    </string-array>
+    <string-array name="sub2">
+        <item>XML</item>
+        <item>Java</item>
+        <item>Firebase</item>
+    </string-array>
+    <string-array name="sub3">
+        <item>Placements</item>
+        <item>Courses</item>
+        <item>Competitions</item>
+        <item>Internships</item>
+    </string-array>
+    <string-array name="sub4">
+        <item>Workshops</item>
+        <item>Results</item>
+        <item>Competitions</item>
+        <item>Events</item>
+
+    </string-array>
 </resources>
