@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#241332"
+    android:layout_height="match_parent"
+    tools:context="com.example.sheaholics_app.SkillsSetup">
+    <ImageView
+        android:id="@+id/image"
+        android:src="@drawable/back"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        />
+    <TextView
+        android:layout_below="@id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Add the skills to your profile"
+        android:layout_marginTop="10dp"
+        android:textSize="30sp"
+        android:layout_marginBottom="30dp"
+        android:textColor="#FFFFFF"
+        android:id="@+id/head"/>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/head"
+        android:layout_centerHorizontal="true"
+        app:cardBackgroundColor="#fcfcfc"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="15dp"
+        android:id="@+id/cv3"
+        >
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-light"
+                android:layout_height="wrap_content"
+                android:text="Select the skill domain"
+
+                android:textColor="#000000"
+                android:id="@+id/select"
+                android:layout_marginLeft="10dp"/>
+            <Spinner
+                android:layout_below="@id/select"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/spinner1"
+                android:layout_marginRight="10dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="#000000"
+                android:textSize="20dp"
+
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-light"
+                android:layout_height="wrap_content"
+                android:text="Select the skill"
+                android:layout_below="@id/spinner1"
+                android:id="@+id/select2"
+                android:layout_marginLeft="10dp"/>
+            <Spinner
+                android:layout_below="@id/select2"
+                android:layout_width="match_parent"
+
+                android:id="@+id/spinner2"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10sp"
+                />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <Button
+        android:id="@+id/skip"
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Skip"
+        android:background="@drawable/button_back"
+        android:layout_below="@id/cv3"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="30dp"/>
+    <Button
+        android:id="@+id/add"
+        android:background="@drawable/button_back"
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:layout_below="@id/cv3"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"/>
+
+
+</RelativeLayout>

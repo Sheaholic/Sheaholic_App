@@ -7,14 +7,37 @@
     android:layout_height="match_parent"
     android:background="#241332"
     tools:context="com.example.sheaholics_app.MainActivity">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:elevation="20dp"
+        android:layout_marginTop="150dp"
+        android:layout_centerHorizontal="true">
+        <Button
+            android:background="@drawable/left_button_back"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="Mentee"/>
+        <Button
+            android:background="@drawable/right_button_back"
+            android:textAllCaps="false"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Mentor"/>
+    </LinearLayout>
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView2"
         android:layout_width="match_parent"
-        android:layout_height="350dp">
+        android:layout_height="250dp">
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/photo"/>
+            android:background="@drawable/photo_n"/>
     </androidx.cardview.widget.CardView>
     <LinearLayout
         android:orientation="vertical"

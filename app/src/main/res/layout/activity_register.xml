@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#241332"
-    tools:context=".RegisterActivity">
+    tools:context="com.example.sheaholics_app.RegisterActivity">
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView2"
         android:layout_width="match_parent"
@@ -26,23 +26,39 @@
         app:cardCornerRadius="4dp"
         android:layout_marginRight="40dp"
         android:layout_centerHorizontal="true"
-
         android:padding="20dp">
         <LinearLayout
-            android:layout_marginTop="50dp"
-            android:layout_marginBottom="50dp"
-            android:padding="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:padding="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+            <EditText
+                android:id="@+id/register_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name"
+                android:inputType="textPersonName"/>
+            <EditText
+                android:id="@+id/register_age"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Age"
+                android:inputType="number"/>
         <EditText
+            android:id="@+id/register_email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Email Id"/>
+            android:hint="Email Id"
+            android:inputType="textEmailAddress"/>
         <EditText
+            android:id="@+id/register_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Password"/>
+            android:hint="Create Password"
+            android:inputType="textPassword"/>
+
         </LinearLayout>
     </androidx.cardview.widget.CardView>
     <Button
@@ -57,11 +73,20 @@
         android:textColor="#FFFFFF"
         android:textSize="25sp"
         android:layout_marginTop="-20dp"/>
+    <ProgressBar
+        android:layout_marginTop="10dp"
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_below="@id/register_button"
+        android:layout_centerHorizontal="true"
+        />
     <TextView
         android:id="@+id/registerToLogin"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
-        android:layout_below="@id/register_button"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/progressBar"
         android:layout_width="wrap_content"
         android:textColor="#FFFFFF"
         android:text="Already Signed In? Click here to Login!"
